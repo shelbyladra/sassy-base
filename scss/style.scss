@@ -1,12 +1,16 @@
 /* VARIABLES */
-$color-background: red;
-$type-base: Helvetica, Arial, san-serif;
+$color-background: pink;
+$type-base: "Montserrat",Helvetica, Arial, san-serif;
 $type-heading: Georgia, serif;
 $type-linewidth: 38em;
+$type-color-light-grey: rgba(0,0,0,.5);
 
 body {
     background: $color-background;
 }
+
+//Color
+$accent-color: #3991c9;
 
 @import "partials/toc";
 @import "partials/typography"; 

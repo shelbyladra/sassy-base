@@ -1,10 +1,10 @@
 /* VARIABLES */
 body {
-  background: red; }
+  background: pink; }
 
 /* VARIABLES */
 body {
-  font-family: Helvetica, Arial, san-serif; }
+  font-family: "Montserrat", Helvetica, Arial, san-serif; }
 
 /* -------------------------------- 
 CSS TABLE OF CONTENTS
@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-size: 100%;
   /* 16 px */
-  font-family: Helvetica, Arial, san-serif; }
+  font-family: "Montserrat", Helvetica, Arial, san-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Georgia, serif;
@@ -65,3 +65,27 @@ h6 {
 p {
   margin: 0 0 .5em 0;
   max-width: 38em; }
+
+/*Horizantol Rule*/
+hr {
+  border: 0;
+  height: 1px;
+  margin: 3em 0;
+  background: white; }
+
+.headline {
+  font-size: 2.5em;
+  color: #3991c9;
+  margin: 0; }
+
+.subheadline {
+  font-family: "Montserrat", Helvetica, Arial, san-serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0.25em 0 0.5em 0; }
+
+.meta {
+  font-size: .875em;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 1.5em; }

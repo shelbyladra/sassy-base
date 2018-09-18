@@ -26,3 +26,31 @@ p{
     max-width: $type-linewidth;
 
 }
+
+/*Horizantol Rule*/
+hr{
+    border: 0;
+    height: 1px;
+    margin: 3em 0;
+    background: white;
+}
+
+.headline{
+    font-size: 2.5em;
+    color: $accent-color;
+    margin: 0;
+}
+
+.subheadline {
+    font-family: $type-base;
+    font-size: 2.5em;
+    font-weight: normal;
+    color: $type-color-light-grey;
+    margin: 0.25em 0 0.5em 0;
+}
+
+.meta{
+    font-size: .875em;
+    color: $type-color-light-grey;
+    margin-bottom: 1.5em;
+}
