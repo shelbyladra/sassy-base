@@ -1,0 +1,49 @@
+/* LAYOUT */
+
+* { box-sizing:border-box; }
+
+// SMALL SCREENS AND UP (MOBILE-FIRST)
+.container {
+    background: green;
+}
+
+body{
+    font-size: 87.5%; /* 14 px */
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+// MED SCREENS (Tablet)
+@media (min-width: $breakpoint-small) {
+
+body{
+    font-size: 100%; /* 16 px */
+}
+    .container {
+        background: red;
+    }
+} 
+
+// LARGE SCREENS (Notebooks) 
+@media (min-width: $breakpoint-medium) {
+    .container {
+        background: blue;
+        max-width: $breakpoint-large - 50;
+        padding: 0 50px;
+    }
+}
+
+// EXTRA LARGE SCREENS (Tablet)
+@media (min-width: $breakpoint-large) {
+    body{
+        font-size: 112.5%; /* 18 px */
+    }
+    .container {
+        background: $link-color;
+        max-width: $breakpoint-large - 50;
+    }
+} 
