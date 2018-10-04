@@ -3,9 +3,7 @@
 * { box-sizing:border-box; }
 
 // SMALL SCREENS AND UP (MOBILE-FIRST)
-.container {
-    background: green;
-}
+
 
 body{
     font-size: 87.5%; /* 14 px */
@@ -23,15 +21,12 @@ body{
 body{
     font-size: 100%; /* 16 px */
 }
-    .container {
-        background: red;
-    }
+   
 } 
 
 // LARGE SCREENS (Notebooks) 
 @media (min-width: $breakpoint-medium) {
     .container {
-        background: blue;
         max-width: $breakpoint-large - 50;
         padding: 0 50px;
     }
@@ -46,7 +41,7 @@ body{
         background: $link-color;
         max-width: $breakpoint-large - 50;
     }
-} 
+}   
 
 /* Grid */
 
@@ -59,13 +54,24 @@ $grid-column-gap: 1%;
     margin-right: -$grid-column-gap;
     justify-content: center;
     align-content: center;
-
+    @media(max-width: $breakpoint-small -1) {
+        justify-content: flexstart;
+    }
 }
 
 .row > .column{
     flex-grow: 1;
     flex-basis: 11em;
-    margin: 0 $grid-column-gap $grid-column-gap*2 -$grid-column-gap;
+    margin-top: 0;
+    margin-right: $grid-column-gap;
+    margin-left: $grid-column-gap;
+    margin-bottom: $grid-column-gap*2;
+    @media(max-width: $breakpoint-small -1) {
+       flex-basis: 15em;
+       flex-grow: 0;
+       border: 1px solid red;
+    }
+
 }
 
 //FOR DEMON PURPOSES
@@ -74,3 +80,4 @@ $grid-column-gap: 1%;
     background: #cccccc;
     text-align: center;
 }
+

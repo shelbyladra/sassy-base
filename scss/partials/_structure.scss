@@ -1,0 +1,23 @@
+/* SITE STRUCTURE */
+header{
+    background: #c6538c;
+    display: flex;
+    justify-content: space-between;
+
+    a{
+        color: #ffffff;
+    }
+
+    .site-navigation{
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        a{
+            display: block;
+            padding: 1em;
+        }
+
+    }
+
+}
