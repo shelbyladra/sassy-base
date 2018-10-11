@@ -23,8 +23,10 @@
 button.alt
   a.button.alt{ 
     background-color: rgba(255, 255, 255, 0);
-    border: 1px solid $link-color;
-    color: $link-color; 
+    border: 1px solid $type-color-links;
+    ;
+    color: $type-color-links;
+    ; 
   }
   
   button :hover, 
