@@ -11,9 +11,11 @@ body {
 }
 
 //Color
-$accent-color: #237eb6;
+$accent-color: #b95292;
 $link-color:#8080ff;
 $darklinks-color:#280080;
+$hero-bg-color: #ffe1f1;
+$type-color: #333;
 
 //BREAKPOINTS
 $breakpoint-small: 768px;
@@ -26,3 +28,4 @@ $breakpoint-large: 1250px;
 @import "partials/components";
 @import "partials/layout";
 @import "partials/structure";
+@import "partials/media";
