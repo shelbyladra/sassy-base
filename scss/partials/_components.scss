@@ -20,13 +20,11 @@
     line-height: 1em;
   }
   
-button.alt
+button.alt,
   a.button.alt{ 
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid $type-color-links;
-    ;
     color: $type-color-links;
-    ; 
   }
   
   button :hover, 
@@ -34,4 +32,5 @@ button.alt
     background-color: $darklinks-color;
     color: #fff;
     border-color: $darklinks-color;
+    text-decoration: none;
   }

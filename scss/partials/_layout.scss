@@ -54,8 +54,8 @@ $grid-column-gap: 1%;
     margin-right: -$grid-column-gap;
     justify-content: center;
     align-content: center;
-    @media(max-width: $breakpoint-small -1) {
-        justify-content: flexstart;
+    &.swapped{
+        flex-direction: row-reverse;
     }
 }
 
@@ -66,12 +66,30 @@ $grid-column-gap: 1%;
     margin-right: $grid-column-gap;
     margin-left: $grid-column-gap;
     margin-bottom: $grid-column-gap*2;
+    
     @media(max-width: $breakpoint-small -1) {
-       flex-basis: 15em;
+       flex-basis: $breakpoint-small;
        flex-grow: 0;
-       border: 1px solid red;
     }
+    &.one-half {
+        width: 48%
+        //width:50 - $grid-column-gap; 
+    }
+    &.one-thrid {
+        width: 31.3333%; 
+        //width:33.3333 - $grid-column-gap; 
 
+    }
+    &.one-fourth {
+        width: 23%;
+                //width:25 - $grid-column-gap; 
+    }
+    @media (min-width: $breakpoint-small) {
+        &.centered {
+            border: 1px solid red;
+            flex-basis: 100px;
+        }  
+    }
 }
 
 //FOR DEMON PURPOSES
