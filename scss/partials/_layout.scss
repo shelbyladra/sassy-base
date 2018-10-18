@@ -38,22 +38,19 @@ body{
         font-size: 112.5%; /* 18 px */
     }
     .container {
-        background: $link-color;
         max-width: $breakpoint-large - 50;
     }
 }   
 
 /* Grid */
 
-$grid-column-gap: 1%;
-
 .row{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -$grid-column-gap;
-    margin-right: -$grid-column-gap;
+    margin-left: 1%;
+    margin-right: 1%;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     &.swapped{
         flex-direction: row-reverse;
     }
@@ -61,12 +58,7 @@ $grid-column-gap: 1%;
 
 .row > .column{
     flex-grow: 1;
-    flex-basis: 11em;
-    margin-top: 0;
-    margin-right: $grid-column-gap;
-    margin-left: $grid-column-gap;
-    margin-bottom: $grid-column-gap*2;
-    
+    margin: 0 1% 2% 1%;
     @media(max-width: $breakpoint-small -1) {
        flex-basis: $breakpoint-small;
        flex-grow: 0;
@@ -86,10 +78,21 @@ $grid-column-gap: 1%;
     }
     @media (min-width: $breakpoint-small) {
         &.centered {
-            border: 1px solid red;
-            flex-basis: 100px;
+            flex-grow: 0;
+            &.one-half,
+            &.one-third,
+            &.one-fourth {
+                // Increase margins to force stack
+                margin-left: 4%;
+                margin-right: 4%;
+
+            }
         }  
     }
+    //Vertically Center Column Content
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 //FOR DEMON PURPOSES

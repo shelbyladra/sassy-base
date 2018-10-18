@@ -53,8 +53,9 @@
     }
 
     .site-footer {
-        display: flex;
+        ul{
         justify-content: center;
+        }
     }
 
     /* Sections */
@@ -63,10 +64,11 @@
         padding: 3em 0;
     }
 
+    /* HERO */
+
     .hero {
         padding: 5em 0;
         background: $hero-bg-color;
-        margin-bottom: 3em;
 
     }
 

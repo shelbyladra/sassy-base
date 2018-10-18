@@ -182,7 +182,6 @@ body {
     font-size: 112.5%;
     /* 18 px */ }
   .container {
-    background: #8080ff;
     max-width: 1200px; } }
 
 /* Grid */
@@ -192,13 +191,14 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: -1%;
-  margin-right: -1%;
+  margin-left: 1%;
+  margin-right: 1%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .row.swapped {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -209,12 +209,17 @@ body {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  -ms-flex-preferred-size: 11em;
-  flex-basis: 11em;
-  margin-top: 0;
-  margin-right: 1%;
-  margin-left: 1%;
-  margin-bottom: 2%; }
+  margin: 0 1% 2% 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   @media (max-width: 768px -1) {
     .row > .column {
       -ms-flex-preferred-size: 768px;
@@ -230,9 +235,12 @@ body {
     width: 23%; }
   @media (min-width: 768px) {
     .row > .column.centered {
-      border: 1px solid red;
-      -ms-flex-preferred-size: 100px;
-      flex-basis: 100px; } }
+      -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0; }
+      .row > .column.centered.one-half, .row > .column.centered.one-third, .row > .column.centered.one-fourth {
+        margin-left: 4%;
+        margin-right: 4%; } }
 
 .demo .column {
   padding: 1em;
@@ -291,10 +299,7 @@ body {
   display: block;
   padding: 1em; }
 
-.site-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.site-footer ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
@@ -303,10 +308,10 @@ body {
 section {
   padding: 3em 0; }
 
+/* HERO */
 .hero {
   padding: 5em 0;
-  background: #ffe1f1;
-  margin-bottom: 3em; }
+  background: #ffe1f1; }
 
 .sectionhead {
   font-size: 1em;
